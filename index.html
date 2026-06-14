@@ -15,15 +15,920 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Nivedan Belwal | Social Media, Content & Growth Specialist" />
     <meta property="og:description" content="Founder of Rajniti.X (25M+ views). Scaled organic audience to 8.3k+ followers. Cybersecurity researcher and storyteller." />
-    <meta property="og:image" content="/portfolio_img.jpeg" />
+    <meta property="og:image" content="portfolio_img.jpeg" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="#about" class="logo">
+          Nivedan Belwal
+          <span class="logo-dot"></span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#rajnitix" class="nav-link">Rajniti.X</a></li>
+          <li><a href="#cases" class="nav-link">Case Studies</a></li>
+          <li><a href="#viral" class="nav-link">Viral Content</a></li>
+          <li><a href="#cryptx" class="nav-link">CryptX Club</a></li>
+          <li><a href="#skills" class="nav-link">Skills & Tools</a></li>
+          <li><a href="#why-edoofa" class="nav-link">Why Edoofa</a></li>
+          <li>
+            <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem; fontSize: 0.85rem;">
+              Contact Me
+            </a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#rajnitix" class="nav-link">Rajniti.X</a>
+        <a href="#cases" class="nav-link">Case Studies</a>
+        <a href="#viral" class="nav-link">Viral Content</a>
+        <a href="#cryptx" class="nav-link">CryptX Club</a>
+        <a href="#skills" class="nav-link">Skills & Tools</a>
+        <a href="#why-edoofa" class="nav-link">Why Edoofa</a>
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- MAIN BODY -->
+    <main style="margin-top: var(--header-height);">
+      
+      <!-- HERO SECTION -->
+      <section id="hero">
+        <div class="container hero-grid">
+          <!-- Main Content -->
+          <div class="hero-content">
+            <div>
+              <span class="section-tag">Digital Growth Portfolio</span>
+            </div>
+            <h1>
+              Content Creator.<br />
+              Researcher.<br />
+              <span class="text-gradient">Growth Storyteller.</span>
+            </h1>
+            <p>
+              Building audiences through research-backed content, current affairs storytelling, and community-focused digital communication.
+            </p>
+            <!-- Action Buttons -->
+            <div class="hero-actions">
+              <a href="#rajnitix" class="btn btn-primary">
+                View My Work
+                <i data-lucide="arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Contact Me
+                <i data-lucide="message-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Profile Card -->
+          <div class="hero-image-container">
+            <div class="profile-card">
+              <img src="portfolio_img.jpeg" alt="Nivedan Belwal" class="profile-img" />
+              <div class="profile-overlay">
+                <h3 class="profile-name">Nivedan Belwal</h3>
+                <p class="profile-title">Growth & Content Strategist</p>
+                <div class="profile-social">
+                  <a href="https://www.instagram.com/raj_niti.x?igsh=MXFxdTZ5bm52a3VycQ==" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="instagram" style="width: 18px; height: 18px;"></i>
+                  </a>
+                  <span class="profile-handle">@raj_niti.x</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-counter-card glass-card">
+              <div class="icon-wrapper"><i data-lucide="users"></i></div>
+              <span class="stat-number" data-target="8337" data-suffix="+">0+</span>
+              <span class="stat-label">Instagram Followers</span>
+            </div>
+            <div class="stat-counter-card glass-card">
+              <div class="icon-wrapper"><i data-lucide="eye"></i></div>
+              <span class="stat-number" data-target="2.7" data-suffix="M+">0M+</span>
+              <span class="stat-label">Monthly Views</span>
+            </div>
+            <div class="stat-counter-card glass-card">
+              <div class="icon-wrapper"><i data-lucide="film"></i></div>
+              <span class="stat-number" data-target="25" data-suffix="M+">0M+</span>
+              <span class="stat-label">Total Reel Views</span>
+            </div>
+            <div class="stat-counter-card glass-card">
+              <div class="icon-wrapper"><i data-lucide="file-text"></i></div>
+              <span class="stat-number" data-target="156" data-suffix="+">0+</span>
+              <span class="stat-label">Posts Published</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" style="background: #0B0D13;">
+        <div class="container about-grid">
+          <!-- Cards Column -->
+          <div class="about-cards">
+            <div class="about-card glass-card primary">
+              <span>The Intersection</span>
+              <h3>Data Meets Attention</h3>
+              <p>
+                Being a Computer Science undergraduate gives me a structured, analytical mind. I apply this technical logic to study algorithms, read viewer drop-offs, and research facts, while utilizing my creative storytelling skills to capture attention in the first 3 seconds.
+              </p>
+            </div>
+            <div class="about-card glass-card secondary">
+              <span>Active Communities</span>
+              <h3>Community & Education</h3>
+              <p>
+                From raising political awareness via Rajniti.X to managing cybersecurity awareness sessions in CryptX Club, my focus is always on creating discussions, simplifying details, and educating the community.
+              </p>
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="about-text">
+            <div>
+              <span class="section-tag">About Me</span>
+              <h2 class="section-title">Nivedan <span>Belwal</span></h2>
+            </div>
+            <p>
+              I am a Computer Science undergraduate and digital content creator with experience in building and managing online communities. I founded <strong>Rajniti.X</strong>, an Instagram-based current affairs and political awareness platform that has reached millions of viewers organically.
+            </p>
+            <p>
+              My strength lies in researching complex topics, understanding audience interest, designing engaging visual stories, and turning raw information into content that people want to watch, discuss, and share.
+            </p>
+            <p class="muted">
+              Additionally, as a key member of the <strong>CryptX Club</strong>, I serve as a cybersecurity researcher, directing what topics and content should be shared with students to keep them aware, safe, and engaged.
+            </p>
+
+            <!-- Pillars -->
+            <div class="about-text-pillars">
+              <div class="pillars">
+                <div class="pillar">
+                  <div class="pillar-icon"><i data-lucide="book-open"></i></div>
+                  <div>
+                    <h4>Audience Research</h4>
+                    <p>Deep-diving into topics to find hidden angles, interest triggers, and current affairs insights.</p>
+                  </div>
+                </div>
+                <div class="pillar">
+                  <div class="pillar-icon"><i data-lucide="help-circle"></i></div>
+                  <div>
+                    <h4>Creative Storytelling</h4>
+                    <p>Translating dry stats and complex news into captivating short-form videos that raise questions.</p>
+                  </div>
+                </div>
+                <div class="pillar">
+                  <div class="pillar-icon"><i data-lucide="share-2"></i></div>
+                  <div>
+                    <h4>Organic Growth</h4>
+                    <p>Leveraging hooks and audience interest to bypass paid reach and build authentic, viral awareness.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RAJNITI SECTION -->
+      <section id="rajnitix" style="background: #08090C;">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-tag">Featured Work</span>
+            <h2 class="section-title">Rajniti.X — <span>Instagram Platform</span></h2>
+            <p class="section-desc" style="margin: 0 auto 2rem auto;">
+              A current affairs, political awareness, and public issue platform built to educate, question, and awaken audiences through impactful short-form storytelling.
+            </p>
+          </div>
+
+          <div class="rajniti-grid">
+            <!-- Details Card -->
+            <div class="rajniti-card glass-card">
+              <div class="glow"></div>
+              <div>
+                <div class="rajniti-header">
+                  <div class="rajniti-icon-wrapper">
+                    <i data-lucide="instagram" style="width: 28px; height: 28px;"></i>
+                  </div>
+                  <div>
+                    <h3>@raj_niti.x</h3>
+                    <p>Current Affairs awareness</p>
+                  </div>
+                </div>
+                <p class="rajniti-card-desc">
+                  Rajniti.X was founded on the belief that news shouldn't be boring or inaccessible. By converting dense political arguments and economic issues into highly shareable, visually gripping reels, the page crossed <strong>25 Million views</strong> organically without a single rupee spent on marketing.
+                </p>
+
+                <!-- Highlights -->
+                <div class="rajniti-highlights">
+                  <div class="rajniti-highlight">
+                    <span>Viral Milestone</span>
+                    <h4>18.1M+</h4>
+                    <p>Views on highest-performing reel</p>
+                  </div>
+                  <div class="rajniti-highlight">
+                    <span>Community</span>
+                    <h4>8.3K+</h4>
+                    <p>Subscribers organically in few months</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="https://www.instagram.com/raj_niti.x?igsh=MXFxdTZ5bm52a3VycQ==" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; gap: 0.75rem;">
+                <i data-lucide="instagram"></i>
+                Visit Rajniti.X on Instagram
+              </a>
+            </div>
+
+            <!-- Responsibilities Card -->
+            <div class="roles-card glass-card">
+              <h3>
+                <i data-lucide="trending-up" style="color: var(--secondary-accent);"></i>
+                My Core Responsibilities
+              </h3>
+              <div class="roles-list">
+                <div class="role-item">
+                  <div class="icon-wrapper"><i data-lucide="check-circle" style="width: 18px; height: 18px;"></i></div>
+                  <p>Founder and sole content creator</p>
+                </div>
+                <div class="role-item">
+                  <div class="icon-wrapper"><i data-lucide="check-circle" style="width: 18px; height: 18px;"></i></div>
+                  <p>Topic research and daily trend selection</p>
+                </div>
+                <div class="role-item">
+                  <div class="icon-wrapper"><i data-lucide="check-circle" style="width: 18px; height: 18px;"></i></div>
+                  <p>Content planning and publication strategy</p>
+                </div>
+                <div class="role-item">
+                  <div class="icon-wrapper"><i data-lucide="check-circle" style="width: 18px; height: 18px;"></i></div>
+                  <p>Script writing, voiceovers, and visual styling</p>
+                </div>
+                <div class="role-item">
+                  <div class="icon-wrapper"><i data-lucide="check-circle" style="width: 18px; height: 18px;"></i></div>
+                  <p>Short-form hook & format analysis</p>
+                </div>
+                <div class="role-item">
+                  <div class="icon-wrapper"><i data-lucide="check-circle" style="width: 18px; height: 18px;"></i></div>
+                  <p>Active audience engagement & community discussions</p>
+                </div>
+                <div class="role-item">
+                  <div class="icon-wrapper"><i data-lucide="check-circle" style="width: 18px; height: 18px;"></i></div>
+                  <p>Performance tracking using Instagram Insights</p>
+                </div>
+                <div class="role-item">
+                  <div class="icon-wrapper"><i data-lucide="check-circle" style="width: 18px; height: 18px;"></i></div>
+                  <p>A/B testing hooks to maximize organic reach</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASE STUDIES SECTION -->
+      <section id="cases" style="background: #0B0D13;">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-tag">Growth Mechanics</span>
+            <h2 class="section-title">Rajniti.X <span>Case Studies</span></h2>
+            <p class="section-desc" style="margin: 0 auto 4rem auto;">
+              How structured planning, data-driven optimization, and deep content research scaled the page from zero to millions of organic impressions.
+            </p>
+          </div>
+
+          <div class="cases-grid">
+            <!-- Card 1 -->
+            <div class="case-card glass-card" style="box-shadow: 0 10px 30px -10px rgba(255, 77, 121, 0.05);">
+              <div>
+                <div class="case-top">
+                  <div class="case-icon-wrapper primary"><i data-lucide="trending-up"></i></div>
+                  <span class="case-badge primary">Organic Reach</span>
+                </div>
+                <h3>Audience Growth</h3>
+                <p class="case-summary">Scaled to 8,337+ followers organically in months</p>
+                <ul class="case-points">
+                  <li class="case-point primary"><i data-lucide="chevron-right"></i><span><strong>Consistent Posting:</strong> Maintained structured uploading schedules matching peak active hours.</span></li>
+                  <li class="case-point primary"><i data-lucide="chevron-right"></i><span><strong>Trend Jacking:</strong> Intercepted breaking current affairs and hot political topics within hours.</span></li>
+                  <li class="case-point primary"><i data-lucide="chevron-right"></i><span><strong>Audience-Centric Value:</strong> Designed content that answered viewers' immediate queries on public issues.</span></li>
+                  <li class="case-point primary"><i data-lucide="chevron-right"></i><span><strong>Shareability Focus:</strong> Produced reels that took a strong stance, encouraging users to share to stories.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="case-card glass-card" style="box-shadow: 0 10px 30px -10px rgba(255, 179, 71, 0.05);">
+              <div>
+                <div class="case-top">
+                  <div class="case-icon-wrapper secondary"><i data-lucide="flame"></i></div>
+                  <span class="case-badge secondary">Reel Architecture</span>
+                </div>
+                <h3>Viral Content Strategy</h3>
+                <p class="case-summary">Engineered short-form structures that generated 25M+ views</p>
+                <ul class="case-points">
+                  <li class="case-point secondary"><i data-lucide="chevron-right"></i><span><strong>The 3-Second Hook:</strong> Formulated text overlays and curiosity gaps to prevent scrolling.</span></li>
+                  <li class="case-point secondary"><i data-lucide="chevron-right"></i><span><strong>Emotional Resonance:</strong> Tied current affairs to relatable issues (inflation, safety, local regulations).</span></li>
+                  <li class="case-point secondary"><i data-lucide="chevron-right"></i><span><strong>Pacing & Visuals:</strong> Utilized rapid cuts, overlay images, and dynamic text to match the attention span.</span></li>
+                  <li class="case-point secondary"><i data-lucide="chevron-right"></i><span><strong>High-Engagement Call to Action:</strong> Asked open-ended questions at the end to trigger massive comment threads.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="case-card glass-card" style="box-shadow: 0 10px 30px -10px rgba(255, 77, 121, 0.05);">
+              <div>
+                <div class="case-top">
+                  <div class="case-icon-wrapper primary"><i data-lucide="search"></i></div>
+                  <span class="case-badge primary">Fact-Check Funnel</span>
+                </div>
+                <h3>Research-Backed Content</h3>
+                <p class="case-summary">Rooted political awareness in structured facts to build trust</p>
+                <ul class="case-points">
+                  <li class="case-point primary"><i data-lucide="chevron-right"></i><span><strong>Primary Source Factoring:</strong> Read news publications, bills, and policy draft reports before writing.</span></li>
+                  <li class="case-point primary"><i data-lucide="chevron-right"></i><span><strong>Simplification Pipeline:</strong> Translated legalese and economic terms into layman's analogies.</span></li>
+                  <li class="case-point primary"><i data-lucide="chevron-right"></i><span><strong>Balanced Discussion:</strong> Maintained neutrality on controversial topics to promote open debate.</span></li>
+                  <li class="case-point primary"><i data-lucide="chevron-right"></i><span><strong>Visual Proofs:</strong> Embedded official reports, newspaper clips, and video quotes directly in the reels.</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="case-card glass-card" style="box-shadow: 0 10px 30px -10px rgba(255, 179, 71, 0.05);">
+              <div>
+                <div class="case-top">
+                  <div class="case-icon-wrapper secondary"><i data-lucide="bar-chart-3"></i></div>
+                  <span class="case-badge secondary">Data Loop</span>
+                </div>
+                <h3>Performance Learning</h3>
+                <p class="case-summary">Using Instagram Insights to double down on winning formats</p>
+                <ul class="case-points">
+                  <li class="case-point secondary"><i data-lucide="chevron-right"></i><span><strong>Metric Breakdown:</strong> Tracked 'Shares' and 'Saves' as primary indicators of long-term content health.</span></li>
+                  <li class="case-point secondary"><i data-lucide="chevron-right"></i><span><strong>Drop-off Diagnosis:</strong> Analyzed watch-time curves to identify dead moments and edit tighter transitions.</span></li>
+                  <li class="case-point secondary"><i data-lucide="chevron-right"></i><span><strong>Audience Cohort Study:</strong> Studied demographic graphs to tailor topics to the 18–34 age group.</span></li>
+                  <li class="case-point secondary"><i data-lucide="chevron-right"></i><span><strong>Iterative Refinement:</strong> Converted successful viral angles into multi-part awareness series.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIRAL CONTENT SHOWCASE -->
+      <section id="viral" style="background: #08090C;">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 4rem;">
+            <span class="section-tag">Audience Retention</span>
+            <h2 class="section-title">Viral Content <span>Showcase</span></h2>
+            <p class="section-desc" style="margin: 0 auto;">
+              Analysis of Rajniti.X's top-performing short-form videos. Every million views was backed by a structured hook, content logic, and audience psychology.
+            </p>
+          </div>
+
+          <div class="reels-grid">
+            <!-- Reel 1 -->
+            <div class="reel-card glass-card">
+              <div>
+                <div class="reel-top">
+                  <div class="reel-views">
+                    <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
+                    <span>18.1M+ Views</span>
+                  </div>
+                  <span class="reel-badge">Viral Hero</span>
+                </div>
+                <h3>Highest Performing Reel</h3>
+                <div class="reel-details">
+                  <div class="reel-detail-group">
+                    <span>Hook Strategy</span>
+                    <p>Curiosity Gap: Opened with a bold, controversial statement overlaid on high-contrast footage, making viewers pause instantly.</p>
+                  </div>
+                  <div class="reel-detail-group">
+                    <span>Why It Worked</span>
+                    <p>Tapped into a high-reach topic with immediate public interest. The formatting encouraged viewers to argue/agree in the comments, pushing it rapidly into the Instagram algorithmic loop.</p>
+                  </div>
+                  <div class="reel-detail-group learning">
+                    <span>Key Learning</span>
+                    <p>High shareability beats high likes. Designing content with sections that viewers want to send to their friends is the quickest path to virality.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reel 2 -->
+            <div class="reel-card glass-card">
+              <div>
+                <div class="reel-top">
+                  <div class="reel-views">
+                    <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
+                    <span>5.1M+ Views</span>
+                  </div>
+                  <span class="reel-badge">Public Discussion</span>
+                </div>
+                <h3>Viral Public Interest Reel</h3>
+                <div class="reel-details">
+                  <div class="reel-detail-group">
+                    <span>Hook Strategy</span>
+                    <p>Emotional Hook: Addressed a local community issue directly affecting the daily life of young professionals.</p>
+                  </div>
+                  <div class="reel-detail-group">
+                    <span>Why It Worked</span>
+                    <p>Relatability. It validated viewers' silent frustrations, prompting them to share and tag their peers in discussion threads.</p>
+                  </div>
+                  <div class="reel-detail-group learning">
+                    <span>Key Learning</span>
+                    <p>Empathy-driven storytelling creates high-fidelity engagement. Audiences follow creators who talk about the things they care about but don't say.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reel 3 -->
+            <div class="reel-card glass-card">
+              <div>
+                <div class="reel-top">
+                  <div class="reel-views">
+                    <i data-lucide="eye" style="width: 18px; height: 18px;"></i>
+                    <span>1.5M+ Views</span>
+                  </div>
+                  <span class="reel-badge">Awareness Campaign</span>
+                </div>
+                <h3>High-Reach Awareness Reel</h3>
+                <div class="reel-details">
+                  <div class="reel-detail-group">
+                    <span>Hook Strategy</span>
+                    <p>Informative Hook: Promised a solution to a complex regulatory policy in the first 2 seconds.</p>
+                  </div>
+                  <div class="reel-detail-group">
+                    <span>Why It Worked</span>
+                    <p>High educational value. Instead of just listing facts, I animated the timeline, keeping viewers hooked till the last second.</p>
+                  </div>
+                  <div class="reel-detail-group learning">
+                    <span>Key Learning</span>
+                    <p>Retention is everything. Pacing the facts in a 1-2-3 list keeps the watch-time curve flat, signalling high quality to the algorithm.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CRYPTX CLUB SECTION -->
+      <section id="cryptx" style="background: #0B0D13;">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-tag">Community & Leadership</span>
+            <h2 class="section-title">CryptX Club — <span>Research & Content Direction</span></h2>
+            <p class="section-desc" style="margin: 0 auto 3.5rem auto;">
+              Contributing to student-led cybersecurity awareness initiatives. Bridging the gap between technical threat intelligence and public understanding.
+            </p>
+          </div>
+
+          <div class="cryptx-intro">
+            <!-- Intro Text -->
+            <div class="cryptx-intro-text">
+              <h3>Directing the Message of Security</h3>
+              <p>
+                As an active member of CryptX Club, Nivedan leads research initiatives that power the club's educational output. Cybersecurity awareness isn't about scaring students with code—it's about creating content that clearly demonstrates risks like third-party apps, social engineering, and passive data harvesting.
+              </p>
+              <div class="cryptx-list">
+                <div class="cryptx-list-item">
+                  <i data-lucide="check-circle2" style="width: 18px; height: 18px;"></i>
+                  <p>Identify current cybersecurity threats suitable for university student awareness activities</p>
+                </div>
+                <div class="cryptx-list-item">
+                  <i data-lucide="check-circle2" style="width: 18px; height: 18px;"></i>
+                  <p>Support content structure planning for interactive offline awareness sessions</p>
+                </div>
+                <div class="cryptx-list-item">
+                  <i data-lucide="check-circle2" style="width: 18px; height: 18px;"></i>
+                  <p>Contribute ideas for event themes, debate topics, and security scenarios</p>
+                </div>
+                <div class="cryptx-list-item">
+                  <i data-lucide="check-circle2" style="width: 18px; height: 18px;"></i>
+                  <p>Assist in preparing research-backed presentation decks and learning logs</p>
+                </div>
+                <div class="cryptx-list-item">
+                  <i data-lucide="check-circle2" style="width: 18px; height: 18px;"></i>
+                  <p>Filter technical details to make cybersecurity hygiene recommendations actionable for beginners</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Highlight Card -->
+            <div class="event-highlight-card glass-card">
+              <div class="event-highlight-header">
+                <i data-lucide="calendar" style="width: 22px; height: 22px;"></i>
+                <h4>Event Highlight</h4>
+              </div>
+              <p>
+                CryptX Club hosted <strong>two major campus events</strong>. Nivedan served as a content researcher and planner, establishing topic criteria, fact-checking cybersecurity statistics, and organizing key learning points to maximize student retention and participation.
+              </p>
+              <a href="https://www.instagram.com/cryptx_club?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="align-self: flex-start; display: flex; gap: 0.5rem; font-size: 0.85rem;">
+                <i data-lucide="instagram" style="width: 16px; height: 16px;"></i>
+                Visit CryptX Instagram
+              </a>
+            </div>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="cryptx-grid">
+            <div class="cryptx-card glass-card">
+              <div>
+                <div class="cryptx-card-icon"><i data-lucide="book-open" style="width: 20px; height: 20px;"></i></div>
+                <h4>Cybersecurity Research</h4>
+                <p>Investigating emerging threats, social engineering statistics, and data privacy frameworks to formulate relevant education points.</p>
+              </div>
+              <ul class="cryptx-subpoints">
+                <li class="cryptx-subpoint"><span class="dot"></span>Analyzed recent data breaches</li>
+                <li class="cryptx-subpoint"><span class="dot"></span>Sourced current cyber stats</li>
+                <li class="cryptx-subpoint"><span class="dot"></span>Fact-checked workshop materials</li>
+              </ul>
+            </div>
+
+            <div class="cryptx-card glass-card">
+              <div>
+                <div class="cryptx-card-icon"><i data-lucide="shield" style="width: 20px; height: 20px;"></i></div>
+                <h4>Content Direction</h4>
+                <p>Translating complex cryptographic concepts and technical network jargon into simple, eye-opening slides for student awareness.</p>
+              </div>
+              <ul class="cryptx-subpoints">
+                <li class="cryptx-subpoint"><span class="dot"></span>Simplified phishing definitions</li>
+                <li class="cryptx-subpoint"><span class="dot"></span>Created discussion frameworks</li>
+                <li class="cryptx-subpoint"><span class="dot"></span>Guided student event scripts</li>
+              </ul>
+            </div>
+
+            <div class="cryptx-card glass-card">
+              <div>
+                <div class="cryptx-card-icon"><i data-lucide="presentation" style="width: 20px; height: 20px;"></i></div>
+                <h4>Event Support</h4>
+                <p>Spearheaded content pipelines and research material support for the club's major student outreach events and hackathons.</p>
+              </div>
+              <ul class="cryptx-subpoints">
+                <li class="cryptx-subpoint"><span class="dot"></span>Organized session content flows</li>
+                <li class="cryptx-subpoint"><span class="dot"></span>Prepared speaker outlines</li>
+                <li class="cryptx-subpoint"><span class="dot"></span>Created awareness handouts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" style="background: #08090C;">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-tag">Competencies</span>
+            <h2 class="section-title">Growth & <span>Research Arsenal</span></h2>
+            <p class="section-desc" style="margin: 0 auto 3.5rem auto;">
+              My toolkit spans visual content creation, deep current affairs research, and analytical insights, refined over millions of organic impressions.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Category 1 -->
+            <div class="skills-category-card glass-card accent-pink">
+              <div class="skills-category-header">
+                <div class="skills-category-icon"><i data-lucide="sparkles" style="width: 18px; height: 18px;"></i></div>
+                <h3>Content & Growth</h3>
+              </div>
+              <div class="skills-pills">
+                <span class="skill-pill">Social Media Strategy</span>
+                <span class="skill-pill">Content Creation</span>
+                <span class="skill-pill">Short-Form Video Strategy</span>
+                <span class="skill-pill">Audience Growth</span>
+                <span class="skill-pill">Trend Research</span>
+                <span class="skill-pill">Content Research</span>
+                <span class="skill-pill">Storytelling</span>
+                <span class="skill-pill">Caption Writing</span>
+                <span class="skill-pill">Community Engagement</span>
+                <span class="skill-pill">Personal Branding</span>
+                <span class="skill-pill">Growth Experimentation</span>
+              </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="skills-category-card glass-card accent-amber">
+              <div class="skills-category-header">
+                <div class="skills-category-icon"><i data-lucide="file-search" style="width: 18px; height: 18px;"></i></div>
+                <h3>Research & Communication</h3>
+              </div>
+              <div class="skills-pills">
+                <span class="skill-pill">Topic Research</span>
+                <span class="skill-pill">Current Affairs Analysis</span>
+                <span class="skill-pill">Audience Psychology</span>
+                <span class="skill-pill">Public Awareness Content</span>
+                <span class="skill-pill">Presentation Planning</span>
+                <span class="skill-pill">Event Content Planning</span>
+                <span class="skill-pill">Simplifying Complex Topics</span>
+              </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="skills-category-card glass-card accent-pink">
+              <div class="skills-category-header">
+                <div class="skills-category-icon"><i data-lucide="pen-tool" style="width: 18px; height: 18px;"></i></div>
+                <h3>Tools & Analytics</h3>
+              </div>
+              <div class="skills-pills">
+                <span class="skill-pill">Instagram Insights</span>
+                <span class="skill-pill">Canva</span>
+                <span class="skill-pill">CapCut</span>
+                <span class="skill-pill">ChatGPT</span>
+                <span class="skill-pill">Meta Business Suite</span>
+                <span class="skill-pill">Google Workspace</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY EDOOFA SECTION -->
+      <section id="why-edoofa" style="background: #08090C;">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-tag">Role Alignment</span>
+            <h2 class="section-title">Why I Fit <span>Edoofa</span></h2>
+            <p class="section-desc" style="margin: 0 auto 3.5rem auto;">
+              How my unique blend of analytical research, viral short-form storytelling, and community-building aligns with Edoofa's mission.
+            </p>
+          </div>
+
+          <div class="edoofa-layout">
+            <!-- Left Panel -->
+            <div class="edoofa-statement">
+              <div class="edoofa-quote">
+                "Edoofa needs content that builds trust, creates awareness, and reaches students through authentic storytelling."
+              </div>
+              <p>
+                My experience with <strong>Rajniti.X</strong> has taught me how to research deep audience interests, create content that earns massive organic attention, and build trust without corporate jargon. I understand how to convert information into engaging short-form video formats, and how to use insights to systematically improve performance.
+              </p>
+              <p>
+                At Edoofa, I want to apply this organic audience-building blueprint to create student-focused stories, nurture relationships across student communities, and help the Edoofa brand scale through meaningful and consistent digital content.
+              </p>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="edoofa-benefits">
+              <div class="edoofa-benefit-card glass-card">
+                <div class="edoofa-benefit-icon"><i data-lucide="shield-check" style="width: 20px; height: 20px;"></i></div>
+                <div>
+                  <h4>Building Trust</h4>
+                  <p>By combining rigorous factual research with clear explanations, I create content that establishes credibility—essential for students and parents navigating educational options.</p>
+                </div>
+              </div>
+
+              <div class="edoofa-benefit-card glass-card">
+                <div class="edoofa-benefit-icon"><i data-lucide="users" style="width: 20px; height: 20px;"></i></div>
+                <div>
+                  <h4>Student-Centric Stories</h4>
+                  <p>I specialize in audience psychology: understanding what students care about, their anxieties, and their aspirations, translating these insights into relatable digital narratives.</p>
+                </div>
+              </div>
+
+              <div class="edoofa-benefit-card glass-card">
+                <div class="edoofa-benefit-icon"><i data-lucide="line-chart" style="width: 20px; height: 20px;"></i></div>
+                <div>
+                  <h4>Data-Driven Scaling</h4>
+                  <p>Just like I did at Rajniti.X, I monitor click-throughs, drop-off curves, and engagement rates to continually optimize messaging and formats, guaranteeing cost-effective organic growth.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS & CREDENTIALS SECTION -->
+      <section id="achievements" style="background: #0B0D13;">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 4rem;">
+            <span class="section-tag">Track Record</span>
+            <h2 class="section-title">Milestones & <span>Achievements</span></h2>
+            <p class="section-desc" style="margin: 0 auto;">
+              Highlights of organic growth, audience milestones, community leadership, and professional certifications.
+            </p>
+          </div>
+
+          <div class="achievements-layout">
+            <!-- Key Highlights Card -->
+            <div class="highlights-card glass-card">
+              <h3>
+                <i data-lucide="trophy" style="color: var(--secondary-accent); width: 24px; height: 24px;"></i>
+                Key Highlights
+              </h3>
+              <div class="highlights-list">
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                  <p>Built and scaled Rajniti.X to 8,337+ Instagram followers organically in a few months</p>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                  <p>Generated over 2.7 Million organic views in the last 30 days alone</p>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                  <p>Created multiple viral reels crossing 18.1 Million, 5.1 Million, and 1.5 Million views</p>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                  <p>Produced 156+ comprehensive pieces of content around current affairs and public awareness</p>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                  <p>Contributed to CryptX Club as a key research and content-direction member</p>
+                </div>
+                <div class="highlight-item">
+                  <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                  <p>Successfully supported content research and planning for two major campus cybersecurity events</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Credentials Card Panel -->
+            <div class="certs-panel">
+              <h3>
+                <i data-lucide="award" style="width: 24px; height: 24px;"></i>
+                Verified Credentials
+              </h3>
+              <div class="certs-list">
+                <div class="cert-card glass-card" data-title="Web Exploits Workshop" data-sub="Achievement Certificate" data-file="Achievement Certificate - Nivedan Belwal.pdf" data-type="pdf">
+                  <div class="cert-info">
+                    <h4>Web Exploits Workshop</h4>
+                    <p>Achievement Certificate</p>
+                  </div>
+                  <button class="btn btn-secondary">
+                    <i data-lucide="eye" style="width: 12px; height: 12px;"></i>
+                    View
+                  </button>
+                </div>
+
+                <div class="cert-card glass-card" data-title="CSAXCON Conference" data-sub="Conference Participation" data-file="CSAXCON_CERTIFICATE_NIVEDAN_BELWAL.pdf" data-type="pdf">
+                  <div class="cert-info">
+                    <h4>CSAXCON Conference</h4>
+                    <p>Conference Participation</p>
+                  </div>
+                  <button class="btn btn-secondary">
+                    <i data-lucide="eye" style="width: 12px; height: 12px;"></i>
+                    View
+                  </button>
+                </div>
+
+                <div class="cert-card glass-card" data-title="Internet of Things (IoT)" data-sub="NPTEL Swayam Certification" data-file="Nivedan Belwal IOT certificate.pdf" data-type="pdf">
+                  <div class="cert-info">
+                    <h4>Internet of Things (IoT)</h4>
+                    <p>NPTEL Swayam Certification</p>
+                  </div>
+                  <button class="btn btn-secondary">
+                    <i data-lucide="eye" style="width: 12px; height: 12px;"></i>
+                    View
+                  </button>
+                </div>
+
+                <div class="cert-card glass-card" data-title="Grapethon National Hackathon" data-sub="Unstop - National Level Participation" data-file="Unstop_hackathon.jpeg" data-type="image">
+                  <div class="cert-info">
+                    <h4>Grapethon National Hackathon</h4>
+                    <p>Unstop - National Level Participation</p>
+                  </div>
+                  <button class="btn btn-secondary">
+                    <i data-lucide="eye" style="width: 12px; height: 12px;"></i>
+                    View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" style="background: #0B0D13; border-bottom: 1px solid rgba(255, 255, 255, 0.04);">
+        <div class="container">
+          <div class="contact-container">
+            <!-- Header -->
+            <div>
+              <span class="section-tag">Get in Touch</span>
+              <h2 class="section-title">Let's Build Content <span>That Matters</span></h2>
+              <p class="section-desc" style="margin: 0 auto;">
+                Let's connect and discuss how I can help scale Edoofa's digital footprint and organic student outreach.
+              </p>
+            </div>
+
+            <!-- Contact Card Panel -->
+            <div class="contact-content">
+              <div class="contact-bio">
+                <h3>Nivedan Belwal</h3>
+                <p>
+                  Have an opportunity, want to talk growth analytics, or interested in a content collaboration? Connect with me directly through any of the channels below.
+                </p>
+              </div>
+
+              <!-- Social Grid -->
+              <div class="social-grid">
+                <!-- Email -->
+                <a href="mailto:nivedanbelwal627@gmail.com" target="_blank" rel="noopener noreferrer" class="social-card glass-card">
+                  <div class="social-icon-wrapper" style="color: #FF4D79;"><i data-lucide="mail"></i></div>
+                  <div>
+                    <span class="name">Email Me</span>
+                    <p class="value">nivedanbelwal627@gmail.com</p>
+                  </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/nivedan-belwal" target="_blank" rel="noopener noreferrer" class="social-card glass-card">
+                  <div class="social-icon-wrapper" style="color: #0077B5;"><i data-lucide="linkedin"></i></div>
+                  <div>
+                    <span class="name">LinkedIn</span>
+                    <p class="value">linkedin.com/in/nivedan-belwal</p>
+                  </div>
+                </a>
+
+                <!-- Rajniti -->
+                <a href="https://www.instagram.com/raj_niti.x?igsh=MXFxdTZ5bm52a3VycQ==" target="_blank" rel="noopener noreferrer" class="social-card glass-card">
+                  <div class="social-icon-wrapper" style="color: #E1306C;"><i data-lucide="instagram"></i></div>
+                  <div>
+                    <span class="name">Rajniti.X</span>
+                    <p class="value">@raj_niti.x</p>
+                  </div>
+                </a>
+
+                <!-- CryptX -->
+                <a href="https://www.instagram.com/cryptx_club?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="social-card glass-card">
+                  <div class="social-icon-wrapper" style="color: #E1306C;"><i data-lucide="instagram"></i></div>
+                  <div>
+                    <span class="name">CryptX Club</span>
+                    <p class="value">@cryptx_club</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Credits -->
+              <div class="footer-credits">
+                © <span id="current-year">2026</span> Nivedan Belwal. Made with 📈 and 💡 for Edoofa.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- CERTIFICATION MODAL -->
+    <div class="modal-overlay" id="cert-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-header-text">
+            <h3 id="modal-title">Certificate Name</h3>
+            <p id="modal-sub">Certificate Subtitle</p>
+          </div>
+          <button class="modal-close" id="modal-close" aria-label="Close modal">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <!-- Document Preview Window -->
+        <div class="modal-body" id="modal-body">
+          <!-- Content injected dynamically via JavaScript -->
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="modal-link">
+            <i data-lucide="link" style="width: 14px; height: 14px;"></i>
+            Open Document in New Tab
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="main.js"></script>
+    <script>
+      // Update year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
